@@ -1,0 +1,245 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid black; */
+  scroll-behavior: smooth;
+}
+main {
+  font-family: "Quicksand";
+}
+header {
+  position: sticky;
+  top: 0;
+}
+img {
+  border-radius: 20px;
+}
+.container-header {
+  background-color: #b4d4ff;
+  display: flex;
+  justify-content: space-evenly;
+}
+.container-header .sidename {
+  display: flex;
+}
+#aside-aboutme {
+  font-size: smaller;
+  font-weight: bolder;
+}
+.container-header nav {
+  display: flex;
+}
+header .container-header nav li {
+  display: flex;
+  align-content: stretch;
+  font-weight: bolder;
+  list-style-type: none;
+}
+nav li :hover {
+  background-color: #5e93d9;
+  opacity: 70%;
+}
+ul a {
+  color: black;
+  text-decoration: none;
+}
+
+ol li {
+  box-shadow: 1px 1px 1px #5e93d9;
+  margin: 5px;
+  border-radius: 20px;
+  background-color: #176b87;
+  color: aliceblue;
+}
+
+header .container-header nav li ul {
+  padding: 20px;
+}
+main {
+  display: flex;
+}
+main #content {
+  flex-direction: column;
+}
+main #content #content-home {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+  background-color: #b4d4ff;
+}
+main #content #content-HMIF {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #86b6f6;
+}
+main #content #content-Akademik {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #86b6f6;
+}
+main #content #content-Lainnya {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #86b6f6;
+}
+.subtitle p {
+  font-size: 40px;
+  text-align: center;
+  align-content: center;
+}
+.subtitle-title p {
+  font-size: 80px;
+  text-align: center;
+  align-content: center;
+  font-weight: bolder;
+}
+.subtitle-title {
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  margin-bottom: 10px;
+  box-shadow: 1px 1px 3px #176b87;
+  border-radius: 20px;
+}
+.list-deskripsi {
+  display: flex;
+  text-align: justify;
+  flex-direction: column;
+}
+.judul-list-deskripsi {
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+  font-size: larger;
+  box-shadow: 1px 1px 1px #5e93d9;
+  background-color: #5e93d9;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.list-deskripsi ol {
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+  padding-bottom: 5px;
+}
+.list-deskripsi ol li {
+  padding: 10px;
+  list-style-type: square;
+  font-weight: bold;
+}
+#welcome-text,
+article {
+  padding: 20px;
+  justify-content: center;
+}
+aside {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#aside-photo-slide {
+  box-shadow: 1px 1px 5px rgb(88, 88, 169);
+  background-color: #176b87;
+  border-radius: 20px;
+  width: max-content;
+  padding: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mySlides img {
+  padding: 10px;
+  width: 250px;
+  height: 250px;
+}
+.deskripsi {
+  height: fit-content;
+  padding-left: 50px;
+  box-shadow: 1px 1px 5px #176b87;
+  background-color: #176b87;
+  border-radius: 15px;
+  color: aliceblue;
+  padding: 5px;
+  font-size: smaller;
+  font-weight: bold;
+}
+footer {
+  display: flex;
+  padding: 25px;
+  font-weight: bold;
+  justify-content: space-between;
+  background-color: #176b87;
+}
+.fa-ul {
+  display: flex;
+  width: 100px;
+  justify-content: space-between;
+}
+.fa-ul li :hover {
+  font-size: larger;
+}
+
+.container-footer {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1000px) {
+  p {
+    text-align: justify;
+  }
+  .subtitle {
+    margin-top: 210px;
+    padding-bottom: 10px;
+  }
+  .subtitle-title {
+    margin-top: 60px;
+  }
+  .subtitle-title p {
+    font-size: 40px;
+    font-weight: bolder;
+  }
+  nav {
+    width: 100%;
+    background-color: #5e93d9;
+    display: flex;
+    justify-content: space-around;
+  }
+  .container-header {
+    flex-direction: column;
+    align-items: center;
+  }
+  #content-home {
+    flex-direction: column;
+  }
+  .deskripsi {
+    padding-left: 0;
+  }
+  #aside-photo-slide {
+    width: fit-content;
+    justify-content: space-between;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+  .mySlides img {
+    width: 130px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
